@@ -511,11 +511,11 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          135,
+          207,
+          236
         ],
-        "text": ""
+        "text": "PRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
       }
     ],
     [
@@ -585,11 +585,11 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          135,
+          207,
+          236
         ],
-        "text": ""
+        "text": "PRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
       }
     ],
     [

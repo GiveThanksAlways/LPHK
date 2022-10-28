@@ -3,9 +3,9 @@
     [
       {
         "color": [
-          14,
-          226,
-          98
+          0,
+          0,
+          0
         ],
         "text": "PRESS shift\nPRESS alt\nPRESS f5\nRELEASE_ALL"
       },
@@ -77,16 +77,16 @@
     [
       {
         "color": [
-          14,
-          226,
-          98
+          0,
+          0,
+          0
         ],
         "text": "PRESS alt\nPRESS f5\nRELEASE_ALL"
       },
       {
         "color": [
           0,
-          128,
+          0,
           0
         ],
         "text": "PRESS ctrl\nPRESS 1\nRELEASE_ALL"
@@ -159,9 +159,9 @@
       },
       {
         "color": [
-          129,
-          129,
-          255
+          0,
+          0,
+          0
         ],
         "text": "PRESS ctrl\nPRESS 2\nRELEASE_ALL"
       },
@@ -235,7 +235,7 @@
         "color": [
           0,
           0,
-          255
+          0
         ],
         "text": "PRESS ctrl\nPRESS s\nRELEASE_ALL\nDELAY 1\nPRESS ctrl\nPRESS shift\nPRESS 2\nRELEASE_ALL\nPRESS ctrl\nPRESS w\nRELEASE_ALL"
       },
@@ -265,33 +265,33 @@
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 7\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 4\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 1\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 0\nRELEASE_ALL"
       }
@@ -300,8 +300,8 @@
       {
         "color": [
           0,
-          234,
-          255
+          0,
+          0
         ],
         "text": "PRESS num_lock\nPRESS 1\nRELEASE_ALL"
       },
@@ -339,33 +339,33 @@
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 8\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 5\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 2\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 0\nRELEASE_ALL"
       }
@@ -413,25 +413,25 @@
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 9\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 6\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS 3\nRELEASE_ALL"
       },
@@ -529,41 +529,41 @@
       },
       {
         "color": [
-          146,
-          238,
-          146
+          0,
+          0,
+          0
         ],
         "text": "PRESS ctrl\nPRESS shift\nPRESS e\nRELEASE_ALL"
       },
       {
         "color": [
-          255,
-          255,
+          0,
+          0,
           0
         ],
         "text": "PRESS ctrl\nPRESS shift\nPRESS g\nRELEASE_ALL"
       },
       {
         "color": [
-          146,
-          238,
-          146
+          0,
+          0,
+          0
         ],
         "text": "PRESS ctrl\nPRESS shift\nPRESS d\nRELEASE_ALL"
       },
       {
         "color": [
-          255,
-          255,
+          0,
+          0,
           0
         ],
         "text": "PRESS ctrl\nPRESS shift\nPRESS f\nRELEASE_ALL"
       },
       {
         "color": [
-          146,
-          238,
-          146
+          0,
+          0,
+          0
         ],
         "text": "PRESS ctrl\nPRESS shift\nPRESS x\nRELEASE_ALL"
       },
@@ -603,41 +603,41 @@
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
         "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
       },
