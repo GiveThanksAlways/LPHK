@@ -67,11 +67,11 @@
       },
       {
         "color": [
-          0,
+          255,
           0,
           0
         ],
-        "text": ""
+        "text": "PRESS cmd\nPRESS x\nRELEASE_ALL\nDELAY 1\nPRESS u\nRELEASE_ALL\nDELAY 1\nPRESS s\nRELEASE_ALL"
       }
     ],
     [
@@ -265,35 +265,35 @@
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 7\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 4\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 1\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 0\nRELEASE_ALL"
+        "text": ""
       }
     ],
     [
@@ -339,35 +339,35 @@
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 8\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 5\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 2\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 0\nRELEASE_ALL"
+        "text": ""
       }
     ],
     [
@@ -413,27 +413,27 @@
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 9\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 6\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          213,
-          213,
-          213
+          0,
+          0,
+          0
         ],
-        "text": "PRESS 3\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
@@ -511,11 +511,11 @@
       },
       {
         "color": [
-          135,
-          207,
-          236
+          0,
+          0,
+          0
         ],
-        "text": "PRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
+        "text": ""
       }
     ],
     [
@@ -539,7 +539,7 @@
         "color": [
           255,
           255,
-          0
+          255
         ],
         "text": "PRESS ctrl\nPRESS shift\nPRESS g\nRELEASE_ALL\nPRESS g\nRELEASE_ALL"
       },
@@ -555,7 +555,7 @@
         "color": [
           255,
           255,
-          0
+          255
         ],
         "text": "PRESS ctrl\nPRESS shift\nPRESS f\nRELEASE_ALL"
       },
@@ -577,11 +577,11 @@
       },
       {
         "color": [
-          0,
-          0,
+          255,
+          255,
           0
         ],
-        "text": ""
+        "text": "PRESS ctrl\nPRESS c\nRELEASE_ALL\nDELAY .5\nPRESS ctrl\nPRESS c\nRELEASE_ALL"
       },
       {
         "color": [
@@ -589,7 +589,7 @@
           207,
           236
         ],
-        "text": "PRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
+        "text": "PRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
       }
     ],
     [
@@ -651,19 +651,19 @@
       },
       {
         "color": [
-          0,
-          0,
+          255,
+          255,
           0
         ],
-        "text": ""
+        "text": "PRESS ctrl\nPRESS v\nRELEASE_ALL"
       },
       {
         "color": [
-          0,
-          0,
-          0
+          135,
+          207,
+          236
         ],
-        "text": ""
+        "text": "PRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
       }
     ]
   ],

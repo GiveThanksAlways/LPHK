@@ -67,11 +67,11 @@
       },
       {
         "color": [
-          0,
+          255,
           0,
           0
         ],
-        "text": ""
+        "text": "PRESS cmd\nPRESS x\nRELEASE_ALL\nDELAY 1\nPRESS u\nRELEASE_ALL\nDELAY 1\nPRESS s\nRELEASE_ALL"
       }
     ],
     [
