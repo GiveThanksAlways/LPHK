@@ -35,11 +35,11 @@
       },
       {
         "color": [
+          115,
           0,
-          0,
-          0
+          215
         ],
-        "text": ""
+        "text": "- comments\n- collapse first level of all functions (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 1\nRELEASE_ALL"
       },
       {
         "color": [
@@ -51,11 +51,11 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- launch terminal\nTAP cmd\nDELAY .4\nSTRING terminal\nDELAY .1\nTAP enter\nDELAY 1.4\nTAP k\nDELAY .1\nTAP tab\nDELAY .2\nTAP enter"
       },
       {
         "color": [
@@ -67,11 +67,11 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          233,
+          212,
+          28
         ],
-        "text": ""
+        "text": "- use dication to reduce typing\nPRESS cmd\nPRESS h\nRELEASE_ALL"
       }
     ],
     [
@@ -89,7 +89,81 @@
           128,
           0
         ],
-        "text": "PRESS ctrl\nPRESS 1\nRELEASE_ALL"
+        "text": "- this marcro stages the changes made to this file\nPRESS ctrl\nPRESS s\nRELEASE_ALL\nDELAY .1\n-git stage changes\nPRESS ctrl\nPRESS 1\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          233,
+          212,
+          28
+        ],
+        "text": "- use dication to reduce typing\nPRESS cmd\nPRESS h\nRELEASE_ALL"
+      }
+    ],
+    [
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          129,
+          129,
+          255
+        ],
+        "text": "- this macro ammends the previous commit with the staged changes\n- git commit --amend\nPRESS ctrl\nPRESS 2\nRELEASE_ALL"
       },
       {
         "color": [
@@ -159,85 +233,43 @@
       },
       {
         "color": [
-          129,
-          129,
-          255
-        ],
-        "text": "PRESS ctrl\nPRESS 2\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      }
-    ],
-    [
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
           0,
           0,
           255
         ],
-        "text": "PRESS ctrl\nPRESS s\nRELEASE_ALL\nDELAY 1\nPRESS ctrl\nPRESS shift\nPRESS 2\nRELEASE_ALL\nPRESS ctrl\nPRESS w\nRELEASE_ALL"
+        "text": "- this macro finishes the commit after you are done editing the commit message\nPRESS ctrl\nPRESS s\nRELEASE_ALL\nDELAY 1\nPRESS ctrl\nPRESS shift\nPRESS 2\nRELEASE_ALL\nPRESS ctrl\nPRESS w\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "- swtich screens back to beginning\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "- swtich screens back to beginning\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
       },
       {
         "color": [
@@ -258,42 +290,10 @@
       {
         "color": [
           0,
-          0,
-          0
+          210,
+          238
         ],
-        "text": ""
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS 7\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS 4\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS 1\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS 0\nRELEASE_ALL"
+        "text": "- comments\n- launch a terminal using the location of the current file\n- copy path of file open\nPRESS shift\nPRESS alt\nPRESS c\nRELEASE_ALL\n- launch new vscode terminal\nPRESS ctrl\nPRESS shift\nPRESS `\nRELEASE_ALL\nDELAY 1\nSTRING bash\nTAP enter\nDELAY .5\nSTRING cd\nTAP space\nDELAY .5\n- now paste the file path\nPRESS ctrl\nPRESS shift\nPRESS v\nRELEASE_ALL\n- now delete the file name i.e. doc/README.md --> doc/\nDELAY .5\nPRESS alt\nTAP backspace 2\nRELEASE_ALL\nDELAY .5\nTAP enter\nDELAY .5\nPRESS ctrl\nPRESS l\nRELEASE_ALL"
       }
     ],
     [
@@ -303,7 +303,7 @@
           234,
           255
         ],
-        "text": "PRESS num_lock\nPRESS 1\nRELEASE_ALL"
+        "text": "- used to bring up GitGraph in vscode\nPRESS num_lock\nPRESS 1\nRELEASE_ALL\nPRESS ctrl\nPRESS k\nRELEASE_ALL\n- we delay for just a second to wait for the new GitGraph tab to open\n- then we pin it\nDELAY .8\nPRESS shift\nPRESS enter\nRELEASE_ALL"
       },
       {
         "color": [
@@ -331,6 +331,22 @@
       },
       {
         "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "- switch to last windows\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "- switch to last windows\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
+      },
+      {
+        "color": [
           0,
           0,
           0
@@ -339,35 +355,19 @@
       },
       {
         "color": [
-          213,
-          213,
-          213
+          192,
+          109,
+          0
         ],
-        "text": "PRESS 8\nRELEASE_ALL"
+        "text": "- comments\n- format document using non-default formatter\n- This command is for formatting a markdown file in vscode\n- using the Markdown all in one formatter for tables\n- and a custom keyboard shortcut that I set\nPRESS ctrl\nPRESS alt\nPRESS f\nTAP up\nTAP enter\nRELEASE_ALL\nPRESS ctrl\nPRESS s\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          192,
+          109,
+          0
         ],
-        "text": "PRESS 5\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS 2\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS 0\nRELEASE_ALL"
+        "text": "- comments\n- format the document in vscode\nPRESS shift\nPRESS alt\nPRESS f\nRELEASE_ALL\n- save after format\nDELAY .3\nPRESS ctrl\nPRESS s\nRELEASE_ALL"
       }
     ],
     [
@@ -389,93 +389,19 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          162,
+          139,
+          238
         ],
-        "text": ""
+        "text": "PRESS page_up\nRELEASE_ALL"
       },
       {
         "color": [
-          0,
-          0,
-          0
+          162,
+          139,
+          238
         ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS 9\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS 6\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS 3\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      }
-    ],
-    [
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
+        "text": "PRESS page_down\nRELEASE_ALL"
       },
       {
         "color": [
@@ -529,43 +455,19 @@
       },
       {
         "color": [
-          146,
-          238,
-          146
-        ],
-        "text": "PRESS ctrl\nPRESS shift\nPRESS e\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          255,
-          255,
+          0,
+          0,
           0
         ],
-        "text": "PRESS ctrl\nPRESS shift\nPRESS g\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          146,
-          238,
-          146
-        ],
-        "text": "PRESS ctrl\nPRESS shift\nPRESS d\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          255,
-          255,
+          0,
+          0,
           0
         ],
-        "text": "PRESS ctrl\nPRESS shift\nPRESS f\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          146,
-          238,
-          146
-        ],
-        "text": "PRESS ctrl\nPRESS shift\nPRESS x\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
@@ -582,6 +484,30 @@
           0
         ],
         "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          255,
+          255,
+          0
+        ],
+        "text": "TAP mouse_left 2\nRELEASE_ALL"
       },
       {
         "color": [
@@ -595,51 +521,11 @@
     [
       {
         "color": [
-          0,
-          0,
-          0
+          56,
+          56,
+          103
         ],
-        "text": ""
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "PRESS ctrl\nPRESS b\nRELEASE_ALL"
+        "text": "- launch terminal\nPRESS cmd\nPRESS x\nDELAY 1\nRELEASE_ALL\nPRESS u\nDELAY 1\nRELEASE_ALL\nPRESS s\nRELEASE_ALL"
       },
       {
         "color": [
@@ -659,11 +545,125 @@
       },
       {
         "color": [
+          56,
+          56,
+          103
+        ],
+        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          56,
+          56,
+          103
+        ],
+        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          56,
+          56,
+          103
+        ],
+        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
+      },
+      {
+        "color": [
           0,
           0,
           0
         ],
         "text": ""
+      },
+      {
+        "color": [
+          255,
+          255,
+          0
+        ],
+        "text": "PRESS ctrl\nPRESS c\nRELEASE_ALL\nDELAY .5\nPRESS ctrl\nPRESS c\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "PRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
+      }
+    ],
+    [
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          255,
+          255,
+          0
+        ],
+        "text": "PRESS ctrl\nPRESS v\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "PRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
       }
     ]
   ],
