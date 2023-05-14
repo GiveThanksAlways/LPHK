@@ -2,7 +2,7 @@ MouseInfo==0.1.3
 # Pillow==8.2.0
 py-getch==1.0.1
 PyAutoGUI==0.9.50
-pygame==2.1.2
+pygame==2.4.0
 PyGetWindow==0.0.8
 PyMsgBox==1.0.7
 pynput==1.6.8
