@@ -11,19 +11,27 @@
       },
       {
         "color": [
+          128,
           0,
-          0,
-          0
+          128
         ],
-        "text": ""
+        "text": "- copilot add selection to chat\nPRESS ctrl\nPRESS alt\nPRESS shift\nPRESS f1\nRELEASE_ALL"
       },
       {
         "color": [
+          128,
           0,
-          0,
-          0
+          128
         ],
-        "text": ""
+        "text": "- copilot add terminal selection to chat\nPRESS ctrl\nPRESS alt\nPRESS shift\nPRESS f2\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          128,
+          0,
+          128
+        ],
+        "text": "- copilot attach file to chat\nPRESS ctrl\nPRESS alt\nPRESS shift\nPRESS f3\nRELEASE_ALL"
       },
       {
         "color": [

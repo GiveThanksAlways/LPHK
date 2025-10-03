@@ -1,1 +1,1 @@
-Start-Process -FilePath "C:\Users\spencer.willett\AppData\Local\miniconda3\Scripts\conda.exe" -ArgumentList "run -n lphk python LPHK.py" -NoNewWindow
+Start-Process -FilePath "cmd" -ArgumentList "/c", "`"C:\Users\spencer.willett\AppData\Local\miniconda3\Scripts\conda.exe`" run -n lphk python LPHK.py >nul 2>&1" -NoNewWindow
