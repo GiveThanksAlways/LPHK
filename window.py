@@ -92,6 +92,8 @@ class Main_Window(tk.Frame):
         self.last_clicked = None
         self.outline_box = None
 
+        self.master.iconify()  # Minimize the window when it starts
+
     def init_window(self):
         global root
         
