@@ -5,7 +5,7 @@ import os, sys
 from functools import partial
 import webbrowser
 
-import scripts, files, lp_colors, lp_events, art_mode
+import scripts, files, lp_colors, lp_events, rgb_modes
 from utils import launchpad_connector as lpcon
 
 BUTTON_SIZE = 40
@@ -90,6 +90,7 @@ class Main_Window(tk.Frame):
         self.grid_rects = [[None for y in range(9)] for x in range(9)]
         self.button_mode = "edit"
         self.modes = ["edit", "move", "copy"]
+        self.rgb_mode = None
         self.last_clicked = None
         self.outline_box = None
 
@@ -106,7 +107,6 @@ class Main_Window(tk.Frame):
 
         self.m_Launchpad = tk.Menu(self.m, tearoff=False)
         self.m_Launchpad.add_command(label="Redetect (Restart)", command=self.redetect_lp)
-        self.m_Launchpad.add_command(label="Art Mode", command=self.toggle_art_mode)
         self.m.add_cascade(label="Launchpad", menu=self.m_Launchpad)
 
         self.m_Layout = tk.Menu(self.m, tearoff=False)
@@ -116,9 +116,16 @@ class Main_Window(tk.Frame):
         self.m_Layout.add_command(label="Save Layout As...", command=self.save_layout_as)
         self.m.add_cascade(label="Layout", menu=self.m_Layout)
 
-        self.m_Launchpad = tk.Menu(self.m, tearoff=False)
-        self.m_Launchpad.add_command(label="Art Mode", command=self.toggle_art_mode)
-        self.m.add_cascade(label="Art Mode", menu=self.m_Launchpad)
+        self.m_RGB = tk.Menu(self.m, tearoff=False)
+        self.m_RGB.add_command(label="Static", command=lambda: self.toggle_rgb_mode("static"))
+        self.m_RGB.add_command(label="Breathing", command=lambda: self.toggle_rgb_mode("breathing"))
+        self.m_RGB.add_command(label="Wave", command=lambda: self.toggle_rgb_mode("wave"))
+        self.m_RGB.add_command(label="Wave 2", command=lambda: self.toggle_rgb_mode("wave2"))
+        self.m_RGB.add_command(label="Spectrum Cycling", command=lambda: self.toggle_rgb_mode("spectrum"))
+        self.m_RGB.add_command(label="Reactive", command=lambda: self.toggle_rgb_mode("reactive"))
+        self.m_RGB.add_command(label="Ripple", command=lambda: self.toggle_rgb_mode("ripple"))
+        self.m_RGB.add_command(label="Starlight", command=lambda: self.toggle_rgb_mode("starlight"))
+        self.m.add_cascade(label="RGB Modes", menu=self.m_RGB)
 
         self.disable_menu("Layout")
         
@@ -221,13 +228,14 @@ class Main_Window(tk.Frame):
     def disconnect_lp(self):
         global lp_connected
         try:
-            art_mode.stop()
+            rgb_modes.stop()
             scripts.unbind_all()
             lp_events.timer.cancel()
             lpcon.disconnect(lp_object)
         except:
             self.redetect_lp()
         lp_connected = False
+        self.rgb_mode = None
 
         self.clear_canvas()
 
@@ -241,18 +249,20 @@ class Main_Window(tk.Frame):
         restart = True
         close()
 
-    def toggle_art_mode(self):
-        if self.button_mode == "art":
-            art_mode.stop()
+    def toggle_rgb_mode(self, mode):
+        if self.rgb_mode == mode:
+            rgb_modes.stop()
+            self.rgb_mode = None
             self.button_mode = "edit"
             if files.curr_layout:
                 files.load_layout_to_lp(files.curr_layout, popups=False)
             self.draw_canvas()
         else:
-            art_mode.stop()
-            self.button_mode = "art"
+            rgb_modes.stop()
+            self.rgb_mode = mode
+            self.button_mode = f"rgb_{mode}"
             scripts.unbind_all()
-            art_mode.start(lp_object)
+            rgb_modes.start(mode, lp_object)
             self.draw_canvas()
 
     def unbind_lp(self, prompt_save=True):
@@ -299,7 +309,7 @@ class Main_Window(tk.Frame):
         if self.grid_drawn:
             if(column, row) == (8, 0):
                 # Mode change button
-                art_mode.stop() # Stop art mode if it's running
+                rgb_modes.stop() # Stop art mode if it's running
                 curr_mode_idx = self.modes.index(self.button_mode)
                 curr_mode_idx = (curr_mode_idx + 1) % len(self.modes)
                 self.button_mode = self.modes[curr_mode_idx]
@@ -720,20 +730,6 @@ class Main_Window(tk.Frame):
             
             if not layout_empty:
                 self.popup_choice(self, "Save Changes?", self.warning_image, "You have made changes to this layout.\nWould you like to save this layout before exiting?", [["Save", self.save_layout], ["Save As...", self.save_layout_as], ["Discard", None]])
-
-    def toggle_art_mode(self):
-        if self.button_mode == "art":
-            art_mode.stop()
-            self.button_mode = "edit"
-            if files.curr_layout:
-                files.load_layout_to_lp(files.curr_layout, popups=False)
-            self.draw_canvas()
-        else:
-            art_mode.stop()
-            self.button_mode = "art"
-            scripts.unbind_all()
-            art_mode.start(lp_object)
-            self.draw_canvas()
 
 def make():
     global root

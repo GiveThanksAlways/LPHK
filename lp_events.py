@@ -1,5 +1,6 @@
 import copy, threading, time
 import lp_colors
+import rgb_modes
 
 RUN_DELAY = 0.005  # 0.005 == 200 FPS
 
@@ -30,10 +31,14 @@ def run(lp_object):
             try:
                 if event[2] == 0:
                     pressed[x][y] = False
+                    if not rgb_modes.is_rgb_active:
+                        lp_colors.updateXY(x, y)
                 else:
                     pressed[x][y] = True
                     press_funcs[x][y](x, y)
-                lp_colors.updateXY(x, y)
+                    rgb_modes.on_press(x, y)
+                    if not rgb_modes.is_rgb_active:
+                        lp_colors.updateXY(x, y)
             except IndexError:
                 pass
         else:
