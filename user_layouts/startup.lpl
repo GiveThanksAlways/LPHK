@@ -11,27 +11,27 @@
       },
       {
         "color": [
-          128,
           0,
-          128
+          0,
+          0
         ],
-        "text": "- copilot add selection to chat\nPRESS ctrl\nPRESS alt\nPRESS shift\nPRESS f1\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          128,
           0,
-          128
+          0,
+          0
         ],
-        "text": "- copilot add terminal selection to chat\nPRESS ctrl\nPRESS alt\nPRESS shift\nPRESS f2\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          128,
           0,
-          128
+          0,
+          0
         ],
-        "text": "- copilot attach file to chat\nPRESS ctrl\nPRESS alt\nPRESS shift\nPRESS f3\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
@@ -51,35 +51,27 @@
       },
       {
         "color": [
+          90,
           0,
-          0,
-          0
+          200
         ],
-        "text": ""
+        "text": "- comments\n- collapse to fold level 2 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 2\nRELEASE_ALL"
       },
       {
         "color": [
-          213,
-          213,
-          213
+          70,
+          0,
+          170
         ],
-        "text": "- launch terminal\nTAP cmd\nDELAY .4\nSTRING terminal\nDELAY .1\nTAP enter\nDELAY 1.4\nTAP k\nDELAY .1\nTAP tab\nDELAY .2\nTAP enter"
+        "text": "- comments\n- collapse to fold level 3 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 3\nRELEASE_ALL"
       },
       {
         "color": [
+          70,
           0,
-          0,
-          0
+          170
         ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
+        "text": "- comments\n- collapse to fold level 4 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 4\nRELEASE_ALL"
       }
     ],
     [
@@ -101,11 +93,11 @@
       },
       {
         "color": [
+          50,
           0,
-          0,
-          0
+          140
         ],
-        "text": ""
+        "text": "- comments\n- collapse to fold level 4 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 4\nRELEASE_ALL"
       },
       {
         "color": [
@@ -149,11 +141,11 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- launch terminal\nTAP cmd\nDELAY .4\nSTRING terminal\nDELAY .1\nTAP enter\nDELAY 1.4\nTAP k\nDELAY .1\nTAP tab\nDELAY .2\nTAP enter"
       }
     ],
     [
@@ -511,11 +503,11 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          66,
+          106,
+          226
         ],
-        "text": ""
+        "text": "- copilot add terminal selection to chat\nPRESS ctrl\nPRESS alt\nPRESS f2\nRELEASE_ALL"
       },
       {
         "color": [
@@ -537,54 +529,6 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          56,
-          56,
-          103
-        ],
-        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          56,
-          56,
-          103
-        ],
-        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          56,
-          56,
-          103
-        ],
-        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
           233,
           212,
           28
@@ -598,57 +542,57 @@
           236
         ],
         "text": "PRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          56,
+          56,
+          103
+        ],
+        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          56,
+          56,
+          103
+        ],
+        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          56,
+          56,
+          103
+        ],
+        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
       }
     ],
     [
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
-      },
       {
         "color": [
           0,
@@ -672,6 +616,54 @@
           236
         ],
         "text": "PRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          68,
+          132,
+          169
+        ],
+        "text": "- copilot attach file to chat\nPRESS ctrl\nPRESS alt\nPRESS f3\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          68,
+          132,
+          169
+        ],
+        "text": "- copilot add selection to chat\nPRESS ctrl\nPRESS alt\nPRESS f1\nRELEASE_ALL"
       }
     ]
   ],
