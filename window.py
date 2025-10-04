@@ -5,7 +5,7 @@ import os, sys
 from functools import partial
 import webbrowser
 
-import scripts, files, lp_colors, lp_events
+import scripts, files, lp_colors, lp_events, art_mode
 from utils import launchpad_connector as lpcon
 
 BUTTON_SIZE = 40
@@ -89,6 +89,7 @@ class Main_Window(tk.Frame):
         self.grid_drawn = False
         self.grid_rects = [[None for y in range(9)] for x in range(9)]
         self.button_mode = "edit"
+        self.modes = ["edit", "move", "copy"]
         self.last_clicked = None
         self.outline_box = None
 
@@ -105,6 +106,7 @@ class Main_Window(tk.Frame):
 
         self.m_Launchpad = tk.Menu(self.m, tearoff=False)
         self.m_Launchpad.add_command(label="Redetect (Restart)", command=self.redetect_lp)
+        self.m_Launchpad.add_command(label="Art Mode", command=self.toggle_art_mode)
         self.m.add_cascade(label="Launchpad", menu=self.m_Launchpad)
 
         self.m_Layout = tk.Menu(self.m, tearoff=False)
@@ -113,6 +115,10 @@ class Main_Window(tk.Frame):
         self.m_Layout.add_command(label="Save Layout", command=self.save_layout)
         self.m_Layout.add_command(label="Save Layout As...", command=self.save_layout_as)
         self.m.add_cascade(label="Layout", menu=self.m_Layout)
+
+        self.m_Launchpad = tk.Menu(self.m, tearoff=False)
+        self.m_Launchpad.add_command(label="Art Mode", command=self.toggle_art_mode)
+        self.m.add_cascade(label="Art Mode", menu=self.m_Launchpad)
 
         self.disable_menu("Layout")
         
@@ -215,6 +221,7 @@ class Main_Window(tk.Frame):
     def disconnect_lp(self):
         global lp_connected
         try:
+            art_mode.stop()
             scripts.unbind_all()
             lp_events.timer.cancel()
             lpcon.disconnect(lp_object)
@@ -233,6 +240,20 @@ class Main_Window(tk.Frame):
         global restart
         restart = True
         close()
+
+    def toggle_art_mode(self):
+        if self.button_mode == "art":
+            art_mode.stop()
+            self.button_mode = "edit"
+            if files.curr_layout:
+                files.load_layout_to_lp(files.curr_layout, popups=False)
+            self.draw_canvas()
+        else:
+            art_mode.stop()
+            self.button_mode = "art"
+            scripts.unbind_all()
+            art_mode.start(lp_object)
+            self.draw_canvas()
 
     def unbind_lp(self, prompt_save=True):
         if prompt_save:
@@ -277,16 +298,13 @@ class Main_Window(tk.Frame):
 
         if self.grid_drawn:
             if(column, row) == (8, 0):
-            #mode change
-                self.last_clicked = None
-                if self.button_mode == "edit":
-                    self.button_mode = "move"
-                elif self.button_mode == "move":
-                    self.button_mode = "swap"
-                elif self.button_mode == "swap":
-                    self.button_mode = "copy"
-                else:
-                    self.button_mode = "edit"  
+                # Mode change button
+                art_mode.stop() # Stop art mode if it's running
+                curr_mode_idx = self.modes.index(self.button_mode)
+                curr_mode_idx = (curr_mode_idx + 1) % len(self.modes)
+                self.button_mode = self.modes[curr_mode_idx]
+                print("[window] Changed mode to " + self.button_mode)
+                self.selected_button = None
                 self.draw_canvas()
             else:
                 if self.button_mode == "edit":
@@ -702,6 +720,20 @@ class Main_Window(tk.Frame):
             
             if not layout_empty:
                 self.popup_choice(self, "Save Changes?", self.warning_image, "You have made changes to this layout.\nWould you like to save this layout before exiting?", [["Save", self.save_layout], ["Save As...", self.save_layout_as], ["Discard", None]])
+
+    def toggle_art_mode(self):
+        if self.button_mode == "art":
+            art_mode.stop()
+            self.button_mode = "edit"
+            if files.curr_layout:
+                files.load_layout_to_lp(files.curr_layout, popups=False)
+            self.draw_canvas()
+        else:
+            art_mode.stop()
+            self.button_mode = "art"
+            scripts.unbind_all()
+            art_mode.start(lp_object)
+            self.draw_canvas()
 
 def make():
     global root

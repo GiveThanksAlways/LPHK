@@ -87,7 +87,7 @@ except ImportError:
         sys.exit("[LPHK] Error loading launchpad.py")
 print("")
 
-import lp_events, scripts, files, sound, window
+import lp_events, scripts, files, sound, window, art_mode
 from utils import launchpad_connector
 
 lp = launchpad.Launchpad()
@@ -113,6 +113,7 @@ def init():
 def shutdown():
     if lp_events.timer is not None:
         lp_events.timer.cancel()
+    art_mode.stop()
     scripts.to_run = []
     for x in range(9):
         for y in range(9):
