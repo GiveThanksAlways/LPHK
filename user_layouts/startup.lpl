@@ -43,35 +43,35 @@
       },
       {
         "color": [
-          115,
           0,
-          215
+          0,
+          0
         ],
-        "text": "- comments\n- collapse first level of all functions (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 1\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          90,
           0,
-          200
+          0,
+          0
         ],
-        "text": "- comments\n- collapse to fold level 2 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 2\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          70,
           0,
-          170
+          0,
+          0
         ],
-        "text": "- comments\n- collapse to fold level 3 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 3\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          70,
           0,
-          170
+          0,
+          0
         ],
-        "text": "- comments\n- collapse to fold level 4 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 4\nRELEASE_ALL"
+        "text": ""
       }
     ],
     [
@@ -545,35 +545,35 @@
       },
       {
         "color": [
-          56,
-          56,
-          103
-        ],
-        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          56,
-          56,
-          103
-        ],
-        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          56,
-          56,
-          103
-        ],
-        "text": "- comments\n- close terminal after testing\nPRESS ctrl\nPRESS `\nRELEASE_ALL"
-      },
-      {
-        "color": [
+          115,
           0,
-          0,
-          0
+          215
         ],
-        "text": ""
+        "text": "- comments\n- collapse first level of all functions (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 1\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          90,
+          0,
+          200
+        ],
+        "text": "- comments\n- collapse to fold level 2 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 2\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          70,
+          0,
+          170
+        ],
+        "text": "- comments\n- collapse to fold level 3 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 3\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          70,
+          0,
+          170
+        ],
+        "text": "- comments\n- collapse to fold level 4 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 4\nRELEASE_ALL"
       },
       {
         "color": [
