@@ -4,6 +4,13 @@ color_modes = [["solid" for y in range(9)] for x in range(9)]
 import lp_events, scripts, window
 import colorsys
 
+brightness = 1.0
+
+
+def set_brightness(b):
+    global brightness
+    brightness = b
+
 lp_object = None
 
 
@@ -121,11 +128,13 @@ def updateXY(x, y):
             if window.lp_mode == "Mk1":
                 if type(set_color) is int:
                     set_color = code_to_RGB(set_color)
+                set_color = [int(c * brightness) for c in set_color]
                 lp_object.LedCtrlXY(x, y, set_color[0] // 64, set_color[1] // 64)
             else:
                 if (color_modes[x][y] == "solid") or is_func_key:
                     # pulse and flash only work on main grid
                     if type(set_color) is list:
+                        set_color = [int(c * brightness) for c in set_color]
                         lp_object.LedCtrlXYByRGB(x, y, [c // 4 for c in set_color])
                     else:
                         lp_object.LedCtrlXYByCode(x, y, set_color)

@@ -14,6 +14,8 @@ RIPPLE_SPEED = 0.5  # Seconds for ripple to spread
 STARLIGHT_DENSITY = 0.05  # Chance per button per frame for starlight
 SATURATION = 1.0
 BRIGHTNESS = 1.0
+PASTEL_SATURATION = 0.8
+PASTEL_BRIGHTNESS = 0.05
 STATIC_COLOR = [0, 255, 255]  # Cyan for static mode
 # -----------------------
 
@@ -174,7 +176,7 @@ def _wave2_effect(lp_object):
         for y in range(9):
             pos = (x * cos_val + y * sin_val) / (9 * (abs(cos_val) + abs(sin_val)))
             hue = (start_time / WAVE_SPEED + pos) % 1.0
-            rgb = colorsys.hsv_to_rgb(hue, 0.4, 0.9)  # Lower saturation and brightness for better visibility
+            rgb = colorsys.hsv_to_rgb(hue, PASTEL_SATURATION, PASTEL_BRIGHTNESS)  # Lower saturation and brightness for better visibility
             color = [int(c * 255) for c in rgb]
             if window.lp_mode == "Mk1":
                 lp_object.LedCtrlXY(x, y, color[0] // 64, color[1] // 64)
@@ -210,3 +212,31 @@ def on_press(x, y):
     global _pressed_buttons
     if _current_mode in ["reactive", "ripple"]:
         _pressed_buttons.add((x, y))
+
+def increase_brightness():
+    global BRIGHTNESS
+    BRIGHTNESS = min(1.0, BRIGHTNESS + 0.1)
+    lp_colors.set_brightness(BRIGHTNESS)
+    lp_colors.update_all()
+    print(f"[rgb_modes] Brightness increased to {BRIGHTNESS}")
+
+def decrease_brightness():
+    global BRIGHTNESS
+    BRIGHTNESS = max(0.01, BRIGHTNESS - 0.1)
+    lp_colors.set_brightness(BRIGHTNESS)
+    lp_colors.update_all()
+    print(f"[rgb_modes] Brightness decreased to {BRIGHTNESS}")
+
+def increase_brightness_large():
+    global BRIGHTNESS
+    BRIGHTNESS = min(1.0, BRIGHTNESS + 0.4)
+    lp_colors.set_brightness(BRIGHTNESS)
+    lp_colors.update_all()
+    print(f"[rgb_modes] Brightness increased to {BRIGHTNESS}")
+
+def decrease_brightness_large():
+    global BRIGHTNESS
+    BRIGHTNESS = max(0.01, BRIGHTNESS - 0.4)
+    lp_colors.set_brightness(BRIGHTNESS)
+    lp_colors.update_all()
+    print(f"[rgb_modes] Brightness decreased to {BRIGHTNESS}")

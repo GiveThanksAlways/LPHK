@@ -90,6 +90,15 @@ print("")
 import lp_events, scripts, files, sound, window, rgb_modes
 from utils import launchpad_connector
 
+brightness_file = os.path.join(USER_PATH, "brightness.txt")
+if os.path.exists(brightness_file):
+    with open(brightness_file, "r") as f:
+        try:
+            rgb_modes.BRIGHTNESS = float(f.read().strip())
+            rgb_modes.lp_colors.set_brightness(rgb_modes.BRIGHTNESS)
+        except ValueError:
+            pass
+
 lp = launchpad.Launchpad()
 
 EXIT_ON_WINDOW_CLOSE = True
@@ -127,9 +136,11 @@ def shutdown():
     logger.stop()
     if window.restart:
         if IS_EXE:
-            os.startfile(sys.argv[0])
+            os.execv(sys.executable, ["\"" + sys.executable + "\""] + sys.argv)
         else:
             os.execv(sys.executable, ["\"" + sys.executable + "\""] + sys.argv)
+    with open(brightness_file, "w") as f:
+        f.write(str(rgb_modes.BRIGHTNESS))
     sys.exit("[LPHK] Shutting down...")
 
 

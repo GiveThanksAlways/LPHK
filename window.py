@@ -127,6 +127,13 @@ class Main_Window(tk.Frame):
         self.m_RGB.add_command(label="Starlight", command=lambda: self.toggle_rgb_mode("starlight"))
         self.m.add_cascade(label="RGB Modes", menu=self.m_RGB)
 
+        self.m_Launchpad = tk.Menu(self.m, tearoff=False)
+        self.m_Launchpad.add_command(label="Brightness +0.1", command=self.brightness_plus)
+        self.m_Launchpad.add_command(label="Brightness +0.4", command=self.brightness_plus_large)
+        self.m_Launchpad.add_command(label="Brightness -0.1", command=self.brightness_minus)
+        self.m_Launchpad.add_command(label="Brightness -0.4", command=self.brightness_minus_large)
+        self.m.add_cascade(label="Brightness", menu=self.m_Launchpad)
+
         self.disable_menu("Layout")
         
         self.m_Help = tk.Menu(self.m, tearoff=False)
@@ -264,6 +271,18 @@ class Main_Window(tk.Frame):
             scripts.unbind_all()
             rgb_modes.start(mode, lp_object)
             self.draw_canvas()
+
+    def brightness_plus(self):
+        rgb_modes.increase_brightness()
+
+    def brightness_minus(self):
+        rgb_modes.decrease_brightness()
+
+    def brightness_plus_large(self):
+        rgb_modes.increase_brightness_large()
+
+    def brightness_minus_large(self):
+        rgb_modes.decrease_brightness_large()
 
     def unbind_lp(self, prompt_save=True):
         if prompt_save:
