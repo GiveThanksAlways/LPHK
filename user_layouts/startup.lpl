@@ -3,11 +3,11 @@
     [
       {
         "color": [
-          14,
-          226,
-          98
+          66,
+          156,
+          66
         ],
-        "text": "PRESS shift\nPRESS alt\nPRESS f5\nRELEASE_ALL"
+        "text": "- git stage changes\nPRESS shift\nPRESS alt\nPRESS f5\nRELEASE_ALL"
       },
       {
         "color": [
@@ -19,11 +19,11 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          66,
+          156,
+          66
         ],
-        "text": ""
+        "text": "- make a new commit with staged changes\n- vscode\nPRESS ctrl\nPRESS s\nRELEASE_ALL\nDELAY 1\nPRESS ctrl\nPRESS alt\nPRESS 3\nRELEASE_ALL"
       },
       {
         "color": [
@@ -77,27 +77,27 @@
     [
       {
         "color": [
-          14,
-          226,
-          98
+          66,
+          156,
+          66
         ],
-        "text": "PRESS alt\nPRESS f5\nRELEASE_ALL"
+        "text": "- this macro ammends the previous commit with the staged changes\n- git commit --amend\nPRESS ctrl\nPRESS alt\nPRESS 2\nRELEASE_ALL"
       },
       {
         "color": [
           0,
-          128,
+          0,
           0
         ],
-        "text": "- this marcro stages the changes made to this file\nPRESS ctrl\nPRESS s\nRELEASE_ALL\nDELAY .1\n-git stage changes\nPRESS ctrl\nPRESS 1\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
-          50,
           0,
-          140
+          0,
+          0
         ],
-        "text": "- comments\n- collapse to fold level 4 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 4\nRELEASE_ALL"
+        "text": ""
       },
       {
         "color": [
@@ -159,22 +159,6 @@
       },
       {
         "color": [
-          129,
-          129,
-          255
-        ],
-        "text": "- this macro ammends the previous commit with the staged changes\n- git commit --amend\nPRESS ctrl\nPRESS 2\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          187,
-          187,
-          255
-        ],
-        "text": "- vscode git commit staged changes\nPRESS ctrl\nPRESS s\nRELEASE_ALL\nDELAY 1\nPRESS ctrl\nPRESS shift\nPRESS 3\nRELEASE_ALL"
-      },
-      {
-        "color": [
           0,
           0,
           0
@@ -212,138 +196,6 @@
           0
         ],
         "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      }
-    ],
-    [
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          255
-        ],
-        "text": "- this macro finishes the commit after you are done editing the commit message\nPRESS ctrl\nPRESS s\nRELEASE_ALL\nDELAY 1\nPRESS ctrl\nPRESS shift\nPRESS 2\nRELEASE_ALL\nPRESS ctrl\nPRESS w\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          135,
-          207,
-          236
-        ],
-        "text": "- swtich screens back to beginning\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          135,
-          207,
-          236
-        ],
-        "text": "- swtich screens back to beginning\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      }
-    ],
-    [
-      {
-        "color": [
-          0,
-          234,
-          255
-        ],
-        "text": "- used to bring up GitGraph in vscode\nPRESS num_lock\nPRESS 1\nRELEASE_ALL\nPRESS ctrl\nPRESS k\nRELEASE_ALL\n- we delay for just a second to wait for the new GitGraph tab to open\n- then we pin it\nDELAY .8\nPRESS shift\nPRESS enter\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          135,
-          207,
-          236
-        ],
-        "text": "- switch to last windows\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          135,
-          207,
-          236
-        ],
-        "text": "- switch to last windows\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
       },
       {
         "color": [
@@ -368,6 +220,154 @@
           0
         ],
         "text": "- comments\n- format the document in vscode\nPRESS shift\nPRESS alt\nPRESS f\nRELEASE_ALL\n- save after format\nDELAY .3\nPRESS ctrl\nPRESS s\nRELEASE_ALL"
+      }
+    ],
+    [
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "- swtich screens back to beginning\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "- swtich screens back to beginning\nPRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL\n-PRESS ctrl\n-PRESS cmd\n-PRESS left\n-RELEASE_ALL\n-PRESS ctrl\n-PRESS cmd\n-PRESS left\n-RELEASE_ALL"
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
+      }
+    ],
+    [
+      {
+        "color": [
+          0,
+          234,
+          255
+        ],
+        "text": "- used to bring up GitGraph in vscode\nPRESS ctrl\nPRESS alt\nPRESS g\nRELEASE g\nPRESS g\nRELEASE_ALL\n- we delay for just a second to wait for the new GitGraph tab to open\n- then we pin it\nDELAY 1\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS shift\nPRESS enter\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "- switch to last windows\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          135,
+          207,
+          236
+        ],
+        "text": "- switch to last windows\nPRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL\n-PRESS ctrl\n-PRESS cmd\n-PRESS right\n-RELEASE_ALL\n-PRESS ctrl\n-PRESS cmd\n-PRESS right\n-RELEASE_ALL"
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
       }
     ],
     [
@@ -429,19 +429,19 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
       }
     ],
     [
@@ -503,12 +503,22 @@
       },
       {
         "color": [
-          66,
-          106,
-          226
+          213,
+          213,
+          213
         ],
-        "text": "- copilot add terminal selection to chat\nPRESS ctrl\nPRESS alt\nPRESS f2\nRELEASE_ALL"
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
       },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
+      }
+    ],
+    [
       {
         "color": [
           0,
@@ -516,16 +526,6 @@
           0
         ],
         "text": ""
-      }
-    ],
-    [
-      {
-        "color": [
-          56,
-          56,
-          103
-        ],
-        "text": "- launch terminal\nPRESS cmd\nPRESS x\nDELAY 1\nRELEASE_ALL\nPRESS u\nDELAY 1\nRELEASE_ALL\nPRESS s\nRELEASE_ALL"
       },
       {
         "color": [
@@ -537,11 +537,85 @@
       },
       {
         "color": [
-          135,
-          207,
-          236
+          0,
+          0,
+          0
         ],
-        "text": "PRESS ctrl\nPRESS cmd\nPRESS left\nRELEASE_ALL"
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          68,
+          132,
+          169
+        ],
+        "text": "- copilot add terminal selection to chat\nPRESS ctrl\nPRESS alt\nPRESS f2\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          213,
+          213,
+          213
+        ],
+        "text": "- toogle terminal\nPRESS ctrl\nPRESS j\nRELEASE_ALL"
+      }
+    ],
+    [
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
+      },
+      {
+        "color": [
+          233,
+          212,
+          28
+        ],
+        "text": "- use dication to reduce typing\nPRESS cmd\nPRESS h\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "text": ""
       },
       {
         "color": [
@@ -574,80 +648,6 @@
           170
         ],
         "text": "- comments\n- collapse to fold level 4 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 4\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      }
-    ],
-    [
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
-      },
-      {
-        "color": [
-          233,
-          212,
-          28
-        ],
-        "text": "- use dication to reduce typing\nPRESS cmd\nPRESS h\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          135,
-          207,
-          236
-        ],
-        "text": "PRESS ctrl\nPRESS cmd\nPRESS right\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
-      },
-      {
-        "color": [
-          213,
-          213,
-          213
-        ],
-        "text": "- comments\n- focus on terminal\nPRESS ctrl\nPRESS `\nRELEASE_ALL\nDELAY .1\n\n- make clean and make\nSTRING make clean\nTAP enter\n- clear after clean\nSTRING clear\nTAP enter\n- make\nDELAY .3\nSTRING make\nTAP enter"
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
       },
       {
         "color": [
