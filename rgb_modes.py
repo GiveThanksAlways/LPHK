@@ -54,6 +54,8 @@ def _rgb_thread(lp_object, mode):
             _ripple_effect(lp_object)
         elif mode == "starlight":
             _starlight_effect(lp_object)
+        elif mode == "starlight_slow":
+            _starlight_slow_effect(lp_object)
 
         time.sleep(0.01)  # ~100 FPS
 
@@ -138,8 +140,8 @@ def _ripple_effect(lp_object):
             for rx, ry, start in ripples:
                 dist = abs(x - rx) + abs(y - ry)  # Manhattan distance for vertical/horizontal waves
                 age = time.time() - start
-                if dist <= age * RIPPLE_SPEED:
-                    intensity = 1 - (dist / (age * RIPPLE_SPEED))
+                if abs(dist - age * RIPPLE_SPEED) < 1:  # Within 1 unit of the wave front
+                    intensity = 1
                     max_intensity = max(max_intensity, intensity)
             color = [int(c * max_intensity) for c in STATIC_COLOR]
             if window.lp_mode == "Mk1":
@@ -152,6 +154,25 @@ def _starlight_effect(lp_object):
     for x in range(9):
         for y in range(9):
             if random.random() < STARLIGHT_DENSITY:
+                hue = random.random()
+                rgb = colorsys.hsv_to_rgb(hue, SATURATION, BRIGHTNESS)
+                color = [int(c * 255) for c in rgb]
+                if window.lp_mode == "Mk1":
+                    lp_object.LedCtrlXY(x, y, color[0] // 64, color[1] // 64)
+                else:
+                    lp_object.LedCtrlXYByRGB(x, y, color)
+            else:
+                # Dim or off
+                if window.lp_mode == "Mk1":
+                    lp_object.LedCtrlXY(x, y, 0, 0)
+                else:
+                    lp_object.LedCtrlXYByRGB(x, y, [0, 0, 0])
+
+def _starlight_slow_effect(lp_object):
+    """Slower random twinkling stars."""
+    for x in range(9):
+        for y in range(9):
+            if random.random() < STARLIGHT_DENSITY / 5:  # Lower density for slower twinkling
                 hue = random.random()
                 rgb = colorsys.hsv_to_rgb(hue, SATURATION, BRIGHTNESS)
                 color = [int(c * 255) for c in rgb]

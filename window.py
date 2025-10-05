@@ -125,6 +125,7 @@ class Main_Window(tk.Frame):
         self.m_RGB.add_command(label="Reactive", command=lambda: self.toggle_rgb_mode("reactive"))
         self.m_RGB.add_command(label="Ripple", command=lambda: self.toggle_rgb_mode("ripple"))
         self.m_RGB.add_command(label="Starlight", command=lambda: self.toggle_rgb_mode("starlight"))
+        self.m_RGB.add_command(label="Starlight Slow", command=lambda: self.toggle_rgb_mode("starlight_slow"))
         self.m.add_cascade(label="RGB Modes", menu=self.m_RGB)
 
         self.m_Launchpad = tk.Menu(self.m, tearoff=False)
