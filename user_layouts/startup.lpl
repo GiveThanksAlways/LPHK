@@ -35,27 +35,27 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- switch windows\nPRESS cmd\nPRESS tab\nRELEASE_ALL"
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- switch windows\nPRESS cmd\nPRESS tab\nRELEASE_ALL"
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- switch windows\nPRESS alt\nPRESS tab\nRELEASE_ALL"
       },
       {
         "color": [
@@ -109,27 +109,27 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- switch windows\nPRESS cmd\nPRESS tab\nRELEASE_ALL"
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- switch windows\nPRESS cmd\nPRESS tab\nRELEASE_ALL"
       },
       {
         "color": [
-          0,
-          0,
-          0
+          213,
+          213,
+          213
         ],
-        "text": ""
+        "text": "- switch windows\nPRESS alt\nPRESS tab\nRELEASE_ALL"
       },
       {
         "color": [
@@ -145,7 +145,7 @@
           213,
           213
         ],
-        "text": "- launch terminal\nTAP cmd\nDELAY .4\nSTRING terminal\nDELAY .1\nTAP enter\nDELAY 1.4\nTAP k\nDELAY .1\nTAP tab\nDELAY .2\nTAP enter"
+        "text": "- launch terminal\nTAP cmd\nDELAY .4\nSTRING terminal\nDELAY .1\nTAP enter\nDELAY 1.5\nPRESS ctrl\nPRESS r\nRELEASE_ALL\nDELAY .2\nSTRING tio /dev/ttyUSB0 -b 115200 -d 8 -p none -s 1 -f none --socket unix:/tmp/tio.sock\nDELAY .4\nTAP tab\nDELAY .4\nTAP enter\n- now launch side powershell\nDELAY .5\nPRESS ctrl\nPRESS shift\nPRESS 1\nRELEASE_ALL\n- switch tab back to tio\nPRESS ctrl\nPRESS tab\nRELEASE_ALL\nTAP enter\n- now launch side powershell (admin)\nDELAY .5\nPRESS ctrl\nPRESS shift\nPRESS 6\nRELEASE_ALL\n- attach usb\n-STRING usbipd attach --wsl --busid 6-3\n-DELAY .4\n-TAP enter\n-RELEASE_ALL"
       }
     ],
     [
@@ -479,11 +479,11 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          66,
+          156,
+          66
         ],
-        "text": ""
+        "text": "- git diff view up/down arrows\n- up\nPRESS alt\nPRESS 2\nRELEASE_ALL\nPRESS alt\nPRESS f5\nRELEASE_ALL"
       },
       {
         "color": [
@@ -553,11 +553,11 @@
       },
       {
         "color": [
-          0,
-          0,
-          0
+          66,
+          156,
+          66
         ],
-        "text": ""
+        "text": "- git diff view up/down arrows\n- down\nPRESS alt\nPRESS f5\nRELEASE_ALL"
       },
       {
         "color": [
@@ -607,15 +607,7 @@
           212,
           28
         ],
-        "text": "- use dication to reduce typing\nPRESS cmd\nPRESS h\nRELEASE_ALL"
-      },
-      {
-        "color": [
-          0,
-          0,
-          0
-        ],
-        "text": ""
+        "text": "- use dication to reduce typing\nPRESS cmd\nDELAY .1\nPRESS h\nRELEASE_ALL"
       },
       {
         "color": [
@@ -648,6 +640,14 @@
           170
         ],
         "text": "- comments\n- collapse to fold level 4 (vscode)\nPRESS ctrl\nPRESS k\nRELEASE_ALL\nPRESS ctrl\nPRESS 4\nRELEASE_ALL"
+      },
+      {
+        "color": [
+          68,
+          132,
+          169
+        ],
+        "text": "- copilot add terminal selection to chat\nPRESS ctrl\nPRESS alt\nPRESS f2\nRELEASE_ALL"
       },
       {
         "color": [
