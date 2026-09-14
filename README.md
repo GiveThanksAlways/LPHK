@@ -105,6 +105,8 @@ I have specifically chosen to do my best to develop this using as many cross pla
 ### Windows Install/Run Instructions [[Table of Contents]](https://github.com/nimaid/LPHK#table-of-contents)
 *Is these pre-built binaries do not work for you, please share the issue in the Discord or as a GitHub issue. In the meantime, advanced users can use `INSTALL\environment.yml` to install the LPHK conda environment, and then run `python LPHK.py` after activating it.*
 
+**From source on another Windows PC (venv, optional logon autostart):** see [`INSTALL/windows/OTHER_PC.md`](INSTALL/windows/OTHER_PC.md). Default is a repo `.venv` via `setup-venv.ps1`; conda is optional.
+
 * If you want the installed version (recommended)
   * Download the latest `LPHK_setup_VERSION.exe` file from [https://github.com/nimaid/LPHK/releases/latest](https://github.com/nimaid/LPHK/releases/latest)
   * Run LPHK_setup_VERSION.exe` and follow the on-screen setup instructions.
